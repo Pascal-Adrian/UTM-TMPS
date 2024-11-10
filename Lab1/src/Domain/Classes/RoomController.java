@@ -2,18 +2,20 @@ package Domain.Classes;
 
 import Domain.Interfaces.IRoomController;
 import Domain.Interfaces.ISmartDevice;
+import Domain.Interfaces.ISmartLightBulb;
+import Domain.Interfaces.ISmartSecurityCamera;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RoomController implements IRoomController {
-    private List<ISmartDevice> lights;
+    private List<ISmartLightBulb> lights;
     private ISmartDevice thermostat;
-    private List<ISmartDevice> securityCameras;
+    private List<ISmartSecurityCamera> securityCameras;
     private List<ISmartDevice> smartDevices;
     private String name;
 
-    public RoomController(String name, List<ISmartDevice> lights, ISmartDevice thermostat, List<ISmartDevice> securityCameras) {
+    public RoomController(String name, List<ISmartLightBulb> lights, ISmartDevice thermostat, List<ISmartSecurityCamera> securityCameras) {
         this.name = name;
         this.lights = lights;
         this.thermostat = thermostat;
@@ -39,12 +41,12 @@ public class RoomController implements IRoomController {
         return this.name;
     }
 
-    public void setLights(List<ISmartDevice> lights) {
+    public void setLights(List<ISmartLightBulb> lights) {
         this.lights.clear();
         this.lights.addAll(lights);
     }
 
-    public List<ISmartDevice> getLights() {
+    public List<ISmartLightBulb> getLights() {
         return this.lights;
     }
 
@@ -56,12 +58,12 @@ public class RoomController implements IRoomController {
         return this.thermostat;
     }
 
-    public void setSecurityCameras(List<ISmartDevice> securityCameras) {
+    public void setSecurityCameras(List<ISmartSecurityCamera> securityCameras) {
         this.securityCameras.clear();
         this.securityCameras.addAll(securityCameras);
     }
 
-    public List<ISmartDevice> getSecurityCameras() {
+    public List<ISmartSecurityCamera> getSecurityCameras() {
         return this.securityCameras;
     }
 
@@ -105,5 +107,16 @@ public class RoomController implements IRoomController {
         for (ISmartDevice light : this.lights) {
             light.off();
         }
+    }
+
+    @Override
+    public List<ISmartDevice> getSmartDevices() {
+        return this.smartDevices;
+    }
+
+    @Override
+    public void setSmartDevices(List<ISmartDevice> smartDevices) {
+        this.smartDevices.clear();
+        this.smartDevices.addAll(smartDevices);
     }
 }

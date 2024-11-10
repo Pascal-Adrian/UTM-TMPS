@@ -4,6 +4,8 @@ import Application.Builders.Interfaces.IRoomBuilder;
 import Domain.Classes.RoomController;
 import Domain.Interfaces.IRoomController;
 import Domain.Interfaces.ISmartDevice;
+import Domain.Interfaces.ISmartLightBulb;
+import Domain.Interfaces.ISmartSecurityCamera;
 
 public class RoomBuilder implements IRoomBuilder {
     private IRoomController roomController;
@@ -25,13 +27,13 @@ public class RoomBuilder implements IRoomBuilder {
     }
 
     @Override
-    public IRoomBuilder withLight(ISmartDevice light) {
+    public IRoomBuilder withLight(ISmartLightBulb light) {
         this.roomController.getLights().add(light);
         return this;
     }
 
     @Override
-    public IRoomBuilder withSecurityCamera(ISmartDevice securityCamera) {
+    public IRoomBuilder withSecurityCamera(ISmartSecurityCamera securityCamera) {
         this.roomController.getSecurityCameras().add(securityCamera);
         return this;
     }

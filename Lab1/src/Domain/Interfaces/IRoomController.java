@@ -7,8 +7,10 @@ public interface IRoomController extends IRoomDevicesController, IRoomLightsCont
     String getName();
     void setThermostat(ISmartDevice thermostat);
     ISmartDevice getThermostat();
-    void setLights(List<ISmartDevice> lights);
-    List<ISmartDevice> getLights();
-    void setSecurityCameras(List<ISmartDevice> securityCameras);
-    List<ISmartDevice> getSecurityCameras();
+    void setLights(List<ISmartLightBulb> lights);
+    List<ISmartLightBulb> getLights();
+    void setSecurityCameras(List<ISmartSecurityCamera> securityCameras);
+    List<ISmartSecurityCamera> getSecurityCameras();
+    void setSmartDevices(List<ISmartDevice> smartDevices);
+    List<ISmartDevice> getSmartDevices();
 }

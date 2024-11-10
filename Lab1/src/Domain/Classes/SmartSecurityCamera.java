@@ -1,8 +1,9 @@
 package Domain.Classes;
 
 import Domain.Interfaces.ISmartDevice;
+import Domain.Interfaces.ISmartSecurityCamera;
 
-public class SmartSecurityCamera implements ISmartDevice {
+public class SmartSecurityCamera implements ISmartSecurityCamera {
     private boolean state;
     private boolean connectionState;
     private final int resolution;
@@ -19,14 +20,17 @@ public class SmartSecurityCamera implements ISmartDevice {
         this.resolution = resolution;
     }
 
+    @Override
     public int getResolution() {
         return this.resolution;
     }
 
+    @Override
     public boolean getState() {
         return this.state;
     }
 
+    @Override
     public boolean getConnectionState() {
         return this.connectionState;
     }
