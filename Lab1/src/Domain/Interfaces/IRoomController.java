@@ -5,8 +5,8 @@ import java.util.List;
 public interface IRoomController extends IRoomDevicesController, IRoomLightsController {
     void setName(String name);
     String getName();
-    void setThermostat(ISmartDevice thermostat);
-    ISmartDevice getThermostat();
+    void setThermostat(ISmartThermostat thermostat);
+    ISmartThermostat getThermostat();
     void setLights(List<ISmartLightBulb> lights);
     List<ISmartLightBulb> getLights();
     void setSecurityCameras(List<ISmartSecurityCamera> securityCameras);

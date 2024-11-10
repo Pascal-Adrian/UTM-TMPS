@@ -79,4 +79,14 @@ public class RGBtoHSLSmartLightBulbAdapter implements IRGBSmartLightBulb {
     public boolean getConnectionState() {
         return bulb.getConnectionState();
     }
+
+    @Override
+    public void setBrightness(int brightness) {
+        bulb.setBrightness(brightness);
+    }
+
+    @Override
+    public int getBrightness() {
+        return bulb.getBrightness();
+    }
 }

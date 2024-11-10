@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ad326de-3805-4d80-ae4f-c43dc3b42d5c" name="Changes" comment="" />
+    <list default="true" id="1ad326de-3805-4d80-ae4f-c43dc3b42d5c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/ISmartThermostat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Application/Adapters/RGBtoHSLSmartLightBulbAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Application/Adapters/RGBtoHSLSmartLightBulbAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Application/Builders/Classes/RoomBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Application/Builders/Classes/RoomBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Application/Builders/Interfaces/IRoomBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Application/Builders/Interfaces/IRoomBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Domain/Classes/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Domain/Classes/HouseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Domain/Classes/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Domain/Classes/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Domain/Classes/SmartThermostat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Domain/Classes/SmartThermostat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/IHouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/IHouseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/IRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/IRoomController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,24 +45,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.o_open_close.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lab-1-new&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/adrianpascal/PycharmProjects/UTM-TMPS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.o_open_close.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "lab-2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/adrianpascal/PycharmProjects/UTM-TMPS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.updates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Lab1/Application/Interfaces" />
@@ -90,6 +101,7 @@
       <workItem from="1730368649736" duration="12000" />
       <workItem from="1730368699831" duration="59000" />
       <workItem from="1730389214976" duration="141000" />
+      <workItem from="1731255335384" duration="3223000" />
     </task>
     <servers />
   </component>

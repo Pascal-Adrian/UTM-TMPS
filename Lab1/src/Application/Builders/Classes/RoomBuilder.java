@@ -2,10 +2,7 @@ package Application.Builders.Classes;
 
 import Application.Builders.Interfaces.IRoomBuilder;
 import Domain.Classes.RoomController;
-import Domain.Interfaces.IRoomController;
-import Domain.Interfaces.ISmartDevice;
-import Domain.Interfaces.ISmartLightBulb;
-import Domain.Interfaces.ISmartSecurityCamera;
+import Domain.Interfaces.*;
 
 public class RoomBuilder implements IRoomBuilder {
     private IRoomController roomController;
@@ -21,7 +18,7 @@ public class RoomBuilder implements IRoomBuilder {
     }
 
     @Override
-    public IRoomBuilder withThermostat(ISmartDevice thermostat) {
+    public IRoomBuilder withThermostat(ISmartThermostat thermostat) {
         this.roomController.setThermostat(thermostat);
         return this;
     }

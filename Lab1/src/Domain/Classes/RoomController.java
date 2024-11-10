@@ -1,21 +1,18 @@
 package Domain.Classes;
 
-import Domain.Interfaces.IRoomController;
-import Domain.Interfaces.ISmartDevice;
-import Domain.Interfaces.ISmartLightBulb;
-import Domain.Interfaces.ISmartSecurityCamera;
+import Domain.Interfaces.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RoomController implements IRoomController {
     private List<ISmartLightBulb> lights;
-    private ISmartDevice thermostat;
+    private ISmartThermostat thermostat;
     private List<ISmartSecurityCamera> securityCameras;
     private List<ISmartDevice> smartDevices;
     private String name;
 
-    public RoomController(String name, List<ISmartLightBulb> lights, ISmartDevice thermostat, List<ISmartSecurityCamera> securityCameras) {
+    public RoomController(String name, List<ISmartLightBulb> lights, ISmartThermostat thermostat, List<ISmartSecurityCamera> securityCameras) {
         this.name = name;
         this.lights = lights;
         this.thermostat = thermostat;
@@ -50,11 +47,11 @@ public class RoomController implements IRoomController {
         return this.lights;
     }
 
-    public void setThermostat(ISmartDevice thermostat) {
+    public void setThermostat(ISmartThermostat thermostat) {
         this.thermostat = thermostat;
     }
 
-    public ISmartDevice getThermostat() {
+    public ISmartThermostat getThermostat() {
         return this.thermostat;
     }
 

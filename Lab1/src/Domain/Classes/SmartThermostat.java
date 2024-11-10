@@ -1,8 +1,9 @@
 package Domain.Classes;
 
 import Domain.Interfaces.ISmartDevice;
+import Domain.Interfaces.ISmartThermostat;
 
-public class SmartThermostat implements ISmartDevice {
+public class SmartThermostat implements ISmartThermostat {
     private boolean state;
     private boolean connectionState;
     private int temperature;
@@ -21,10 +22,12 @@ public class SmartThermostat implements ISmartDevice {
         return this.temperature;
     }
 
+    @Override
     public boolean getState() {
         return this.state;
     }
 
+    @Override
     public boolean getConnectionState() {
         return this.connectionState;
     }
