@@ -3,6 +3,8 @@ package Application.Adapters;
 import Domain.Interfaces.IHSLSmartLightBulb;
 import Domain.Interfaces.IRGBSmartLightBulb;
 
+import java.awt.*;
+
 public class RGBtoHSLSmartLightBulbAdapter implements IRGBSmartLightBulb {
     private IHSLSmartLightBulb bulb;
 
@@ -18,7 +20,8 @@ public class RGBtoHSLSmartLightBulbAdapter implements IRGBSmartLightBulb {
 
     @Override
     public int[] getColor() {
-        return bulb.getColor();
+        int[] color = bulb.getColor();
+        return convertHSLtoRGB(color[0], color[1], color[2]);
     }
 
     private int[] convertRGBtoHSL(int red, int green, int blue) {
@@ -47,7 +50,51 @@ public class RGBtoHSLSmartLightBulbAdapter implements IRGBSmartLightBulb {
             h /= 6;
         }
 
-        return new int[] {h, s, l};
+        return new int[]{h, s, l};
+    }
+
+    private int[] convertHSLtoRGB(int h, int s, int l) {
+        float hue = h / 360.0f;
+        float saturation = s / 100.0f;
+        float lightness = l / 100.0f;
+
+        float c = (1 - Math.abs(2 * lightness - 1)) * saturation;
+        float x = c * (1 - Math.abs((hue * 6) % 2 - 1));
+        float m = lightness - c / 2;
+
+        float rPrime = 0, gPrime = 0, bPrime = 0;
+
+        if (hue < 1.0 / 6) {
+            rPrime = c;
+            gPrime = x;
+            bPrime = 0;
+        } else if (hue < 2.0 / 6) {
+            rPrime = x;
+            gPrime = c;
+            bPrime = 0;
+        } else if (hue < 3.0 / 6) {
+            rPrime = 0;
+            gPrime = c;
+            bPrime = x;
+        } else if (hue < 4.0 / 6) {
+            rPrime = 0;
+            gPrime = x;
+            bPrime = c;
+        } else if (hue < 5.0 / 6) {
+            rPrime = x;
+            gPrime = 0;
+            bPrime = c;
+        } else {
+            rPrime = c;
+            gPrime = 0;
+            bPrime = x;
+        }
+
+        int red = Math.round((rPrime + m) * 255);
+        int green = Math.round((gPrime + m) * 255);
+        int blue = Math.round((bPrime + m) * 255);
+
+        return new int[]{red, green, blue};
     }
 
     @Override
