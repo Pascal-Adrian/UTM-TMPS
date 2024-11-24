@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ad326de-3805-4d80-ae4f-c43dc3b42d5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/ISmartThermostat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/Domain/Classes/SmartLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/Domain/Classes/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/ISmartLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/ISubscribable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/ISubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/IUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/src/Application/Adapters/RGBtoHSLSmartLightBulbAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Application/Adapters/RGBtoHSLSmartLightBulbAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/Application/Builders/Classes/RoomBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Application/Builders/Classes/RoomBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/Application/Builders/Interfaces/IRoomBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Application/Builders/Interfaces/IRoomBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/Domain/Classes/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Domain/Classes/HouseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/Domain/Classes/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Domain/Classes/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/Domain/Classes/SmartThermostat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Domain/Classes/SmartThermostat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/IHouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/IHouseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/IRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Domain/Interfaces/IRoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     "Python.o_open_close.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lab-2",
+    "git-widget-placeholder": "lab-3",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/adrianpascal/PycharmProjects/UTM-TMPS",
     "node.js.detected.package.eslint": "true",
@@ -101,7 +100,9 @@
       <workItem from="1730368649736" duration="12000" />
       <workItem from="1730368699831" duration="59000" />
       <workItem from="1730389214976" duration="141000" />
-      <workItem from="1731255335384" duration="3223000" />
+      <workItem from="1731255335384" duration="3966000" />
+      <workItem from="1731307122876" duration="24000" />
+      <workItem from="1732463361684" duration="2013000" />
     </task>
     <servers />
   </component>

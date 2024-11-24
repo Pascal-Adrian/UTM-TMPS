@@ -49,7 +49,6 @@ public class RGBtoHSLSmartLightBulbAdapter implements IRGBSmartLightBulb {
             }
             h /= 6;
         }
-
         return new int[]{h, s, l};
     }
 
